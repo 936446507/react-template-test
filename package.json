@@ -1,0 +1,20 @@
+{
+    "name": "{{name}}",
+    "version": "{{version}}",
+    "description": "{{description}}",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/huomarvin/hwxyz-test.git"
+    },
+    "author": "{{author}}",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/huomarvin/hwxyz-test/issues"
+    },
+    "homepage": "https://github.com/huomarvin/hwxyz-test#readme",
+    "templateVersion": "0.0.1"
+}

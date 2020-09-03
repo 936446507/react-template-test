@@ -1,0 +1,9 @@
+{{#unless router}}
+src/routes/
+{{/unless}}
+
+{{#unless redux}}
+src/page/home.tsx
+{{/unless}}
+
+templates.ignore
