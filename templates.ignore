@@ -1,5 +1,5 @@
 {{#unless router}}
-src/routes/
+src/routes/index.ts
 {{/unless}}
 
 {{#unless redux}}
