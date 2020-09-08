@@ -8,12 +8,12 @@
         {
           loader: "style-loader"
         },
-        { loader: "css-loader", options: { sourceMap: false } },
+        { loader: "css-loader", options: { sourceMap: "false" } },
         {
           loader: "less-loader",
           options: {
-            strictMath: true,
-            noIeCompat: true
+            strictMath: "true",
+            noIeCompat: "true"
           }
         }
       ]
