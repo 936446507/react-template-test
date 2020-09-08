@@ -1,7 +1,7 @@
 {{#unless less}}
 [
   {
-    "path": "webpack.config.js",
+    "path": "/webpack.config.js",
     "content": {
       "test": "/\\.less$/",
       "use": [
@@ -24,13 +24,13 @@
 
 {{#unless router}}
 [
-  "src/route"
+  "/src/route"
 ],
 {{/unless}}
 
 {{#unless redux}}
 [
-  "src/store"
+  "/src/store"
 ],
 {{/unless}}
 
@@ -39,5 +39,5 @@
 {{/unless}}
 
 [
-  "templates.ignore"
+  "/templates.ignore"
 ]
