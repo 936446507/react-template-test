@@ -12,10 +12,10 @@ const outputPath = resolve(sourcePath, `.${projectPath}`);
 const outputPath = resolve(process.cwd(), `dist`);
 {{/if}}
 // exp: publicPath = '/wiki/' projectPath = '/activity/wiki/'
-{{#if source}}
+
 assert(publicPath, 'publicPath 填写项目发布地址的路径');
 assert(projectPath, 'projectPath 填写项目打包输出的路径');
-
+{{#if source}}
 if (typeof sourcePath === 'undefined') {
   console.log('请先配置打包输出的source根目录');
   console.log('Example: npm config set source "D:\\source"');

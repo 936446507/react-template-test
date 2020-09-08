@@ -1,14 +1,14 @@
 {
-  "name": "react-webpack",
-  "version": "1.0.0",
-  "description": "",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "{{author}}",
   "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -42,8 +42,10 @@
     "css-loader": "^0.28.7",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^4.4.1",
+    {{#if less}}
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
+    {{/if}}
     "redux-devtools-extension": "^2.13.8",
     "shelljs": "^0.8.4",
     "style-loader": "^1.2.1",
