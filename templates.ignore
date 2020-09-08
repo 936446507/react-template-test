@@ -1,10 +1,7 @@
 {{#unless less}}
 [
   {
-    "path": "webpack.config.js",
-    "content": {
-      "test": "/\.less$/"
-    }
+    "path": "webpack.config.js"
   }
 ],
 {{/unless}}
