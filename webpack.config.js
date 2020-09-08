@@ -60,6 +60,7 @@ module.exports = {
           },
         },
       },
+      {{#if less}}
       {
         test: /\.less$/,
         use: [
@@ -76,6 +77,7 @@ module.exports = {
           },
         ],
       },
+      {{/if}}
     ],
   },
   performance: {
