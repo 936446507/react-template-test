@@ -1,7 +1,23 @@
 {{#unless less}}
 [
   {
-    "path": "webpack.config.js"
+    "path": "webpack.config.js",
+    "content": {
+      "test": "/.less$/",
+      "use": [
+        {
+          "loader": "style-loader"
+        },
+        { "loader": "css-loader", "options": { "sourceMap": false } },
+        {
+          "loader": "less-loader",
+          "options": {
+            "strictMath": true,
+            "noIeCompat": true
+          }
+        }
+      ]
+    }
   }
 ],
 {{/unless}}
