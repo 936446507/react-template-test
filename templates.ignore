@@ -14,7 +14,7 @@
 {{#unless router}}
 [
   {
-    "path": "/src/route",
+    "path": "/src/routes",
     "type": "delete"
   },
   {
