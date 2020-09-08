@@ -6,8 +6,13 @@ const shell = require('shelljs');
 const publicPath = '/reat-test/';
 const projectPath = '/react-test/';
 const sourcePath = process.env.npm_config_source;
+{{#if source}}
 const outputPath = resolve(sourcePath, `.${projectPath}`);
+{{else}}
+const outputPath = resolve(process.cwd(), `dist`);
+{{/if}}
 // exp: publicPath = '/wiki/' projectPath = '/activity/wiki/'
+{{#if source}}
 assert(publicPath, 'publicPath 填写项目发布地址的路径');
 assert(projectPath, 'projectPath 填写项目打包输出的路径');
 
@@ -18,6 +23,7 @@ if (typeof sourcePath === 'undefined') {
 } else if (!existsSync(sourcePath)) {
   throw new Error('source根目录不存在，请检查配置的 source 根目录是否正确');
 }
+{{/if}}
 /**
  * 将分享图复制到输出目录
  */

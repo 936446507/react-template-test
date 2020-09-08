@@ -1,11 +1,13 @@
 import React, { Suspense } from 'react';
+{{#if router}}
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import routes from './routes';
-
+{{/if}}
 function App() {
   return (
     <div className='App'>
+      {{#if router}}
       <Router>
         <Switch>
           {routes.map((route, i) => (
@@ -23,6 +25,7 @@ function App() {
           ))}
         </Switch>
       </Router>
+      {{/if}}
     </div>
   );
 }
