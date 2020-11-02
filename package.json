@@ -17,14 +17,24 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    {{#if redux}}
     "@types/react-redux": "^7.1.8",
+    {{/if}}
+    {{#if router}}
     "@types/react-router-dom": "^5.1.3",
+    {{/if}}
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    {{#if redux}}
     "react-redux": "^7.2.0",
+    {{/if}}
+    {{#if router}}
     "react-router-dom": "^5.1.2",
+    {{/if}}
     "react-scripts": "3.4.3",
+    {{#if redux}}
     "redux-thunk": "^2.3.0",
+    {{/if}}
     "ts-loader": "^8.0.3",
     "typescript": "~3.7.2"
   },

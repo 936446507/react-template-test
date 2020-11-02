@@ -20,6 +20,10 @@
   {
     "path": "/src/App.tsx",
     "type": "write"
+  },
+  {
+    "path": "/pageage.json",
+    "type": "write"
   }
 ],
 {{/unless}}
@@ -32,6 +36,10 @@
   },
   {
     "path": "/src/index.tsx",
+    "type": "write"
+  },
+  {
+    "path": "/pageage.json",
     "type": "write"
   }
 ],
