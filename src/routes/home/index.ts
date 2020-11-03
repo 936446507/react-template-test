@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteConfig } from '../type';
 
-const IndexComponent = React.lazy(() => import('../../page/home'));
+const IndexComponent = React.lazy(() => import('src/page/home'));
 
 export const routes: RouteConfig[] = [
   {

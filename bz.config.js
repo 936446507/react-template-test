@@ -3,10 +3,10 @@ const { resolve } = require('path');
 const assert = require('assert');
 const shell = require('shelljs');
 
-const publicPath = '/reat-test/';
-const projectPath = '/react-test/';
-const sourcePath = process.env.npm_config_source;
+const publicPath = '';
+const projectPath = '';
 {{#if source}}
+const sourcePath = process.env.npm_config_source;
 const outputPath = resolve(sourcePath, `.${projectPath}`);
 {{else}}
 const outputPath = resolve(process.cwd(), `dist`);

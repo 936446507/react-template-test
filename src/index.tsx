@@ -8,6 +8,7 @@ import configureStore from './store';
 {{/if}}
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './assets/css/reset.css';
 
 {{#if redux}}
 const store = configureStore();

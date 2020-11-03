@@ -18,6 +18,22 @@
     "type": "delete"
   },
   {
+    "path": "/src/components/nav.tsx",
+    "type": "delete"
+  },
+  {
+    "path": "/src/page/home/index.tsx",
+    "type": "delete"
+  },
+  {
+    "path": "/src/page/404.tsx",
+    "type": "delete"
+  },
+  {
+    "path": "/src/page/sitemap.tsx",
+    "type": "delete"
+  },
+  {
     "path": "/src/App.tsx",
     "type": "write"
   },
