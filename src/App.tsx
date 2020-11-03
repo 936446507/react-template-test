@@ -7,9 +7,9 @@ import routes from './routes';
 import logo from 'src/assets/img/logo.png';
 function App() {
   return (
-    <div className='App' style={{ textAlign: 'center',color: '#fff' }}>
+    <div className='App' style='text-align: center'}>
       <img src={logo} alt='logo' />
-      <p style={{ 'fontSize': '18px','fontWeight': 600, 'marginBottom': '20px' }}>
+      <p style="font-size: 18px; font-weight: 600; margin-bottom: 20px">
         Welcome to Your React.js App
       </p>
       {{#if router}}
