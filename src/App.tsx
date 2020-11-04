@@ -5,13 +5,13 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import routes from './routes';
 {{/if}}
 import logo from 'src/assets/img/logo.png';
+import './App.css'
+
 function App() {
   return (
-    <div className='App' style='text-align: center;'>
+    <div className='App'>
       <img src={logo} alt='logo' />
-      <p style="font-size: 18px; font-weight: 600; margin-bottom: 20px">
-        Welcome to Your React.js App
-      </p>
+      <p>Welcome to Your React.js App</p>
       {{#if router}}
       <Router>
         <Switch>

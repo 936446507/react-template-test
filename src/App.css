@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+.App p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
