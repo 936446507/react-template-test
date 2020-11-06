@@ -1,14 +1,13 @@
-import './webpack.index';
+import './webpack.index.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// {{#if redux}}
-// import { Provider } from 'react-redux';
-
-// import configureStore from './store';
-// {{/if}}
-// import App from './App';
-// import * as serviceWorker from './serviceWorker';
-// import './assets/css/reset.css';
+{{#if redux}}
+import { Provider } from 'react-redux';
+import configureStore from './store';
+{{/if}}
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import './assets/css/reset.css';
 
 {{#if redux}}
 const store = configureStore();
