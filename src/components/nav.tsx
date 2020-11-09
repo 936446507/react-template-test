@@ -2,19 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import routes from 'src/routes';
+import 'src/assets/css/nav.css'
 
 function Nav() {
   return (
     <div className='nav'>
-      <ul style={{ marginTop: '20px' }}>
+      <ul>
         {routes.map((r, i) => (
-          <li
-            style={{
-              display: 'inline-block',
-              margin: '0 10px',
-            }}
-            key={i}>
-            <Link to={r.path} style={{ color: '#61dafb' }}>
+          <li key={i}>
+            <Link to={r.path}>
               {r.meta && r.meta.title ? r.meta.title : r.name}
             </Link>
           </li>

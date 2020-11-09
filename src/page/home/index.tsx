@@ -7,6 +7,7 @@ import {
 
 import { StoreState } from 'src/store/type';
 import Nav from 'src/components/nav';
+import 'src/assets/css/home.css'
 
 function Index() {
   const dispatch = useDispatch();
@@ -33,24 +34,12 @@ function Index() {
   }, [home]);
 
   return (
-    <div
-      className='home'
-      style={{
-        textAlign: 'center',
-      }}>
+    <div className='home'>
       <Nav />
-      <div
-        className='home__count'
-        style={{
-          marginTop: '20px',
-        }}>
+      <div className='home__count'>
         <span>count: {home.count}</span>
         <button
           className='home__count--btn'
-          style={{
-            marginLeft: '20px',
-            cursor: 'pointer',
-          }}
           onClick={() => setIsGettingHomeState(true)}>
           + 1
         </button>
